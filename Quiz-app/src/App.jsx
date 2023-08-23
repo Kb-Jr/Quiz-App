@@ -13,7 +13,7 @@ function App() {
 
   return (
     <>
-        <h1>This is a Quiz app</h1>
+        <h1>Quiz app</h1>
         <GameStateContext.Provider value={{gameState, setgameState, userName, setuserName, score, setScore}}>
         {gameState == 'menu' && <Menu />}
         {gameState == 'playing' && <Quiz />}
